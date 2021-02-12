@@ -257,12 +257,11 @@ public class List<ContentType> {
         if(hasAccess()){
             if(current != first && current != last){
                 getPrevious(current).setNextNode(current.getNextNode());
-            }
-            else if(current == first){
+            }else if(current == first){
                 first = first.getNextNode();
-            }
-            else{
+            }else{
                 last = getPrevious(last);
+                last.setNextNode(null);
             }
             current = current.getNextNode();
         }
