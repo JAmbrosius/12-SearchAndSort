@@ -151,7 +151,6 @@ public class MainController {
         switches = 0;
         // Bubblesort Start
         for(int i = 0; i < moddedArray.length; i++){
-            loops++;
             for (int j = 0; j < moddedArray.length-1-i; j++){
                 loops++;
                 if(moddedArray[j].getNumber() > moddedArray[j+1].getNumber()){
